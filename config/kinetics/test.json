@@ -1,0 +1,8 @@
+{
+  "services": [
+    {
+      "appache": {"port":80},
+      "ssh": {"port":22}
+    }
+  ]
+}
