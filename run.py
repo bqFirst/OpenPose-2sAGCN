@@ -425,8 +425,8 @@ class GeneratePose:
         else:
             e = TfPoseEstimator(get_graph_path(args.model), target_size=(432, 368), tf_config=config, trt_bool=args.tensorrt.lower() in ('yes', 'true', 't', 'y', '1'))
         logger.debug('cam read+')
-        # cam = cv2.VideoCapture(args.camera)
-        cap = cv2.VideoCapture(args.video)
+        cam = cv2.VideoCapture(args.camera)
+        # cap = cv2.VideoCapture(args.video)
 
         global skeleton_squence
         frame_index = 0
